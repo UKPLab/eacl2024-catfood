@@ -77,12 +77,21 @@ python src/calibration/baseline/modelling.py --dataset squad --train_size 500 --
 ### Citation 
 Please use the following citation:
 ```
-@misc{sachdeva2023catfood,
-      title={CATfOOD: Counterfactual Augmented Training for Improving Out-of-Domain Performance and Calibration}, 
-      author={Rachneet Sachdeva and Martin Tutek and Iryna Gurevych},
-      year={2023},
-      eprint={2309.07822},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{sachdeva-etal-2024-catfood,
+    title = "{CAT}f{OOD}: Counterfactual Augmented Training for Improving Out-of-Domain Performance and Calibration",
+    author = "Sachdeva, Rachneet  and
+      Tutek, Martin  and
+      Gurevych, Iryna",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.113/",
+    pages = "1876--1898",
+    abstract = "In recent years, large language models (LLMs) have shown remarkable capabilities at scale, particularly at generating text conditioned on a prompt. In our work, we investigate the use of LLMs to augment training data of smaller language models (SLMs) with automatically generated counterfactual (CF) instances {--} i.e. minimally altered inputs {--} in order to improve out-of-domain (OOD) performance of SLMs in the extractive question answering (QA) setup. We show that, across various LLM generators, such data augmentation consistently enhances OOD performance and improves model calibration for both confidence-based and rationale-augmented calibrator models. Furthermore, these performance improvements correlate with higher diversity of CF instances in terms of their surface form and semantic content. Finally, we show that CF augmented models which are easier to calibrate also exhibit much lower entropy when assigning importance, indicating that rationale-augmented calibrators prefer concise explanations."
 }
+
 ```
